@@ -1,0 +1,130 @@
+/* fundo da pagina */
+body{
+ background-attachment: fixed;
+margin: 0;
+background-color:#020202;
+
+}
+  
+/* posicao dos links para redes sociais */
+.facegram{
+    display: flex;
+     gap: 20px;
+     padding-top: 3%;
+      top: 10px ;
+      padding-left: 85%;
+     display: inline-block;
+      background-color: #00baff;
+    padding: 20px;
+      
+ 
+  }
+    /* Movimento dos links para redes sociais quando passamos o mouse */
+  .facegram a{
+      transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  .facegram a:hover{
+      transform: scale(1.2);
+  }
+  
+  /* Posição e estilo da <section> contendo o texto da biografia */
+.biopages{
+  margin:40px auto;
+  background-color: rgb(27, 27, 27);
+  padding: 20px;
+  max-width:1200px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 3%;
+  line-height: 30px;
+  gap: 50px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+ color:#00baff;
+  
+}
+
+/* posição da legenda que esta sobre a foto */
+.fotolegenda{
+ 
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  position: relative;
+text-align: center;
+ 
+  
+}
+ 
+.fotolegenda img{
+  width: 100%;
+  display: block;
+
+
+}
+
+.legenda{
+
+position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ transform: translateY(100%);
+background-color: black;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity:0;
+  transition: opacity 0.3 ease, max-height 0.3 ease;
+line-height: 1.2;
+font-size: 17px;
+
+ 
+
+}
+/* O que faz a legenda aparecer sobre a foto quando passamos o mouse */
+.fotolegenda:hover .legenda{
+  opacity: 1;
+  min-height: 100px;
+  transform: translateY(0);
+
+}         
+/* Titulo da biografia  */
+.titulo{
+    color:  #00baff;
+      letter-spacing: 12px;
+  font-size: 60px;
+  font-weight: bold;
+    text-transform:uppercase;
+
+   justify-content: center;
+    text-shadow: 12px 12px 20px rgb(27, 139, 190);
+  font-style: normal;
+  display: flex;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+}
+
+/* Estilo e posicão do botao para voltar a pagina index */
+.home {
+  
+  position: fixed;
+right: 40px;
+top: 15%;
+z-index: 9999;
+      transition: transform 0.3s ease;
+ 
+}
+
+.home img{
+        width: 60px;
+     height: auto;
+  
+}
+.home:hover{
+  transform: scale(1.3);
+}

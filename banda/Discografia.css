@@ -1,0 +1,152 @@
+ /* Estilização da foto e do formato da legenda */
+div.gallery {
+  border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+div.gallery:hover {
+  border: 2px solid  #00baff;
+     transform: scale(1.1);
+ 
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+/* Descrição da foto */
+div.desc {
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Garante que haja responsividade em diferenets telas */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* resolve possiveis problemas no alinhamento */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Mantem os albuns alinhados */
+.row{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+/* cor do fundo da pagina */
+Body{
+  background-color: black;
+}
+/* titulo da pagina */
+.titulo{
+  color:  #00baff;
+      letter-spacing: 12px;
+  font-size: 50px;
+  font-weight: bold;
+    text-transform:uppercase;
+    display: flex;
+        justify-content: center;
+        text-shadow: 12px 12px 20px rgb(27, 139, 190);
+  font-style: normal;
+  padding-bottom: 5%;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+/* Estiliza o botão menu */
+
+#links{
+       position: absolute;  
+       margin-bottom: 25px;
+       gap:25px;
+       top: 50%;
+       left: 0;
+       display: flex;
+       transform: translateY(-50%);
+       flex-direction: column;
+}
+
+#links a{
+
+   
+ padding: 15px; 
+  width: 150px; 
+   text-decoration: none; 
+ display: block;
+  font-size: 20px;
+  color: white; 
+  border-radius: 0 5px 5px 0;
+      display:block;
+      background-color: #00baff;
+      color:transparent;
+      box-shadow: 0 0 5px #27b6e6, 0 0 15px #00bfff, 0 0 7px #00bfff;
+      padding: 15px;
+      flex-direction: column;
+         left:-80px;
+         position: relative;
+          transition: transform 0.3s ease;
+
+}
+
+#links a:hover{
+    left: 0; 
+  align-items: center;
+  background-color: rgb(5, 119, 250);
+ display: flex;
+ font-size: 20px;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+  transform: scale(1.2);
+}
+/* estiliza o botao para voltar à pagina index */
+
+.home {
+  
+  position: fixed;
+right: 40px;
+top: 50%;
+z-index: 9999;
+      transition: transform 0.3s ease;
+ 
+ 
+    
+}
+
+.home img{
+        width: 60px;
+     height: auto;
+  
+}
+.home:hover{
+  transform: scale(1.3);
+}

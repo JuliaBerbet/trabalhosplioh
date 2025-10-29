@@ -1,0 +1,110 @@
+/* Estilização das fotos e espaço para legenda */
+div.gallery {
+  border: 2px solid #ccc;
+   transition: transform 0.3s ease;
+}
+
+div.gallery:hover {
+  border: 2px solid #00baff;
+  transform: scale(1.1);
+ 
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Descrição da foto */
+div.desc {
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Garante responsividade em outras telas  */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* Resolves possiveis problemas no alinhamento das fotos */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Alinha os albuns */
+.row{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+/* cor de fundo da pagina */
+Body{
+  background-color: black;
+}
+/* titulo da pagina */
+.titulo{
+  color:  #00baff;
+      letter-spacing: 12px;
+  font-size: 50px;
+  font-weight: bold;
+    text-transform:uppercase;
+    display: flex;
+        justify-content: center;
+        text-shadow: 12px 12px 20px rgb(27, 139, 190);
+  font-style: normal;
+  padding-bottom: 5%;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+
+/* Botao para voltar à pagina discografia */
+.home {
+  
+  position: fixed;
+right: 40px;
+top: 50%;
+z-index: 9999;
+      transition: transform 0.3s ease;
+ 
+ 
+    
+}
+
+.home img{
+        width: 60px;
+     height: auto;
+  
+}
+.home:hover{
+  transform: scale(1.3);
+}

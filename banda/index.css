@@ -1,0 +1,85 @@
+/* Estilização do titulo */
+.pg1{
+   color:  #00baff;
+   letter-spacing: 12px;
+   font-size: 80px;
+   font-weight: bold;
+   text-transform:uppercase;
+   display: flex;
+   justify-content: center;
+  text-shadow: 12px 12px 20px rgb(27, 139, 190);
+  font-style: normal;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  z-index: 1;
+}
+
+/* Estilizações para o fundo da pagina */
+body{
+background: url(fotos/the-weeknd-dawnfm.jpg) ;
+height: 100vh;
+width: 100dvw;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ overflow: hidden;
+ position: relative;
+ margin: 0;
+
+}
+
+/* posição dos links para outras paginas */
+    
+#mylinks {
+     position: absolute;  
+       margin-bottom: 25px;
+       gap:25px;
+       top: 50%;
+       left: 0;
+       display: flex;
+       transform: translateY(-50%);
+       flex-direction: column;
+    
+}
+   
+/* Estilo dos links normalmente */
+
+ #mylinks a{
+  
+padding: 15px;
+width: 100px; 
+text-decoration: none; 
+ display: block;
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0;
+      display:block;
+      background-color: #00baff;
+      color:transparent;
+      box-shadow: 0 0 5px #27b6e6, 0 0 15px #00bfff, 0 0 7px #00bfff;
+      padding: 15px;
+ flex-direction: column;
+left:-80px;
+position: relative;
+transition: transform 0.3s ease;
+
+ /* Estilo dos links ao passar o mouse */
+
+ }
+ #mylinks a:hover {
+  left: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 119, 250);
+ display: flex;
+
+ text-align: center;
+ font-size: 20px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: scale(1.2);
+ 
+ 
+
+  
+}
